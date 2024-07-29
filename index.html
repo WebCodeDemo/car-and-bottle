@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car and Giant Low Quality Metal Water Bottle</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="game-container">
+        <h1>Car and Giant Low Quality Metal Water Bottle</h1>
+        
+        <div id="stats">
+            <div>Bank Account: $<span id="bank-account">1000</span></div>
+        </div>
+
+        <div id="meters">
+            <div class="meter-container">
+                <label>Health:</label>
+                <div class="meter health-meter">
+                    <div class="meter-fill" id="health-fill"></div>
+                </div>
+                <span id="health-value">100%</span>
+            </div>
+            
+            <div class="meter-container">
+                <label>Car Fuel:</label>
+                <div class="meter fuel-meter">
+                    <div class="meter-fill" id="fuel-fill"></div>
+                </div>
+                <span id="fuel-value">100%</span>
+            </div>
+            
+            <div class="meter-container">
+                <label>Repair Costs:</label>
+                <div class="meter repair-meter">
+                    <div class="meter-fill" id="repair-fill"></div>
+                </div>
+                <span id="repair-value">$0</span>
+            </div>
+            
+            <div class="meter-container">
+                <label>Water Bottle:</label>
+                <div class="water-bottle">
+                    <div class="water-level" id="water-level"></div>
+                </div>
+                <span id="water-value">100%</span>
+            </div>
+        </div>
+
+        <div id="actions">
+            <button id="work-btn">WORK</button>
+            <button id="refill-car-btn">Refill Car ($50)</button>
+            <button id="refill-bottle-btn">Refill Bottle ($20)</button>
+            <button id="drink-water-btn">Drink Water</button>
+            <button id="repair-car-btn">Repair Car ($100)</button>
+        </div>
+
+        <div id="game-over" style="display: none;">
+            <h2>Game Over</h2>
+            <p id="game-over-reason"></p>
+            <button id="restart-btn">Restart Game</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

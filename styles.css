@@ -1,0 +1,137 @@
+/* Brutalist style CSS for "Car and Giant Low Quality Metal Water Bottle" game */
+
+body {
+    font-family: monospace;
+    background-color: #ffffff;
+    color: #000000;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+#game-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border: 5px solid #000000;
+    padding: 20px;
+    transform: rotate(-1deg);
+}
+
+h1 {
+    font-size: 36px;
+    text-transform: uppercase;
+    border-bottom: 5px solid #000000;
+    padding-bottom: 10px;
+    transform: skew(-5deg);
+}
+
+#stats {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#meters {
+    margin-bottom: 20px;
+}
+
+.meter-container {
+    margin-bottom: 15px;
+}
+
+.meter-container label {
+    display: inline-block;
+    width: 150px;
+    font-weight: bold;
+    transform: rotate(2deg);
+}
+
+.meter {
+    display: inline-block;
+    width: 300px;
+    height: 30px;
+    background-color: #000000;
+    vertical-align: middle;
+}
+
+.meter-fill {
+    height: 100%;
+    transition: width 0.3s linear;
+}
+
+.health-meter .meter-fill {
+    background-color: #ff0000;
+}
+
+.fuel-meter .meter-fill {
+    background-color: #00ff00;
+}
+
+.repair-meter .meter-fill {
+    background-color: #0000ff;
+}
+
+.water-bottle {
+    width: 60px;
+    height: 100px;
+    background-color: #000000;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    overflow: hidden;
+}
+
+.water-level {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #00ffff;
+    transition: height 0.3s linear;
+}
+
+#actions {
+    margin-top: 30px;
+}
+
+button {
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transform: skew(-10deg);
+    transition: transform 0.1s;
+}
+
+button:hover {
+    transform: skew(-10deg) scale(1.05);
+}
+
+button:active {
+    transform: skew(-10deg) scale(0.95);
+}
+
+#game-over {
+    background-color: #ff0000;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    border: 5px solid #000000;
+    margin-top: 20px;
+}
+
+#game-over h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+#restart-btn {
+    background-color: #ffffff;
+    color: #000000;
+    font-weight: bold;
+    margin-top: 20px;
+}
