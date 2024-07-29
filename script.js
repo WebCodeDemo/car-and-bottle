@@ -32,7 +32,7 @@ function gameLoop() {
     carFuel -= 1.5;
     waterBottle -= 1;
     health -= 0.75;
-    repairCosts += 1.5;
+    repairCosts += 2.5;
 
     // Ensure values stay within bounds
     carFuel = Math.max(0, Math.min(100, carFuel));
